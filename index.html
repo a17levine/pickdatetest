@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title></title>
+</head>
+<link rel="stylesheet" type="text/css" href="default.css">
+<link rel="stylesheet" type="text/css" href="default.time.css">
+<body>
+<h1>Time Picker Test</h1>
+
+<input class="timepicker"></input>
+
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="picker.js"></script>
+<script type="text/javascript" src="picker.time.js"></script>
+
+<script type="text/javascript">
+	$('.timepicker').pickatime()
+	var $input = $('.timepicker').pickatime();
+
+	// Use the picker object directly.
+	var picker = $input.pickatime('picker');
+	picker.set('interval', 60);
+</script>
+
+</body>
+</html>
